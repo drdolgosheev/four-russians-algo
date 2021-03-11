@@ -111,9 +111,9 @@ public class ArrUtils {
         int num = 0;
         int size = row.length - 1;
 
-        for (int i = size; i >= 0; i--)
+        for (int i = 0; i <= size; i++)
             if (row[i] != 0)
-                num += Math.pow(2, size - i);
+                num += Math.pow(2, i);
 
         return num;
     }
