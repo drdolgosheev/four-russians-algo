@@ -75,24 +75,10 @@ public class ArrUtils {
             System.out.println(Arrays.toString(row));
     }
 
-    // Get arr's row
-    public static int[] getRow(int[][] arr, int index) {
-        int size = arr.length;
-        int[] row = new int[size];
-
-        if (index == size)
-            return row;
-
-        return arr[index];
-    }
-
     // Get arr's column
     public static int[] getColumn(int[][] arr, int index) {
         int size = arr.length;
         int[] column = new int[size];
-
-        if (index == size)
-            return column;
 
         for (int i = 0; i < size; i++)
             column[i] = arr[i][index];

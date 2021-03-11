@@ -76,7 +76,7 @@ public class FourRussians {
         return C;
     }
 
-    // Dividing matrices by number of parts = roundUp(N/M)
+    // Dividing matrices by number of parts = N/M
     private void preparation(int[][] A, int[][] B, int M, int N) {
         for (int i = 0; i < N / M; i++) {
             addFragmentToA(A, M, i * M, N);
@@ -89,7 +89,7 @@ public class FourRussians {
         int[][] fragment = new int[M][N];
 
         for (int row = 0; row < M; row++)
-            fragment[row] = ArrUtils.getRow(B, startIndex + row);
+            fragment[row] = B[startIndex + row];
 
         fragmentsOfB.add(fragment);
     }
