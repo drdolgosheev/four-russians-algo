@@ -15,8 +15,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         FourRussians fourRussians = new FourRussians();
 
-        String pathnameA = "input/array_1.txt";
-        String pathnameB = "input/array_2.txt";
+        String pathnameA = "src/com/company/input/array_1.txt";
+        String pathnameB = "src/com/company/input/array_2.txt";
 
         // As far as arrays have same size
         int size = ArrUtils.getLength(pathnameA);
